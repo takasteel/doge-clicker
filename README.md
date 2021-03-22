@@ -4,7 +4,7 @@ This is a simple clone of [Cookie Clicker](https://orteil.dashnet.org/cookieclic
 
 Made this to learn more about ReactJS.  
 
-You can check the demo [here](https://hopeful-rosalind-a4b58a.netlify.app).
+You can check the demo [here](https://doge-clicker.netlify.app/).
 
 ## Technologies I learned in this project  
 
