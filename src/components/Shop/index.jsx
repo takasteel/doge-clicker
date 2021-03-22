@@ -40,6 +40,7 @@ export function Shop() {
           </button>
           <span>Cost: {items.doger.price}</span>
           <span>Owned: {items.doger.owned}</span>
+          <span>Produces {items.doger.value/items.doger.interval*1000} doges/sec</span>
         </div>
         
         <div className="grandma">
@@ -57,6 +58,7 @@ export function Shop() {
             </button>
             <span>Cost: {items.grandma.price}</span>
             <span>Owned: {items.grandma.owned}</span>
+            <span>Produces {items.grandma.value/items.grandma.interval*1000} doges/sec</span>
         </div>
       </Items>
       
