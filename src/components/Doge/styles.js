@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import dogeImg from '../../assets/doge.png';
 
 export const Container = styled.div`
   display: flex;
@@ -8,10 +9,12 @@ export const Container = styled.div`
   margin-top: 5rem;
   margin-bottom: 3rem;
 
-  img {
-    max-width: 300px;
-    max-height: 300px;
+  div {
+    width: 300px;
+    height: 218px;
     cursor: pointer;
+    user-select: none;
+    background-image: url(${dogeImg});
   }
 
   p {
