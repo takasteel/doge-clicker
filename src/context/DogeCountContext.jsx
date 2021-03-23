@@ -16,7 +16,7 @@ export function DogesCountProvider({ children }) {
       },
       grandma: {
         name: 'Grandma',
-        startPrice: 100,
+        startPrice: 300,
         multiplier: 1.5,
         value: 8,
         owned: 0,
