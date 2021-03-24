@@ -7,7 +7,6 @@ export function DogesCountProvider({ children }) {
     {
       doger: {
         name: 'Doger',
-        startPrice: 10,
         multiplier: 1.4,
         value: 1,
         owned: 0,
@@ -16,11 +15,10 @@ export function DogesCountProvider({ children }) {
       },
       grandma: {
         name: 'Grandma',
-        startPrice: 300,
         multiplier: 1.5,
         value: 8,
         owned: 0,
-        price: 100,
+        price: 300,
         interval: 5000,
       },
     }
