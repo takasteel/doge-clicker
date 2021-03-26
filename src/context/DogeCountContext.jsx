@@ -7,19 +7,17 @@ export function DogesCountProvider({ children }) {
     {
       doger: {
         name: 'Doger',
-        multiplier: 1.4,
-        value: 1,
+        multiplier: 1.1,
         owned: 0,
         price: 10,
         interval: 10000,
       },
       grandma: {
         name: 'Grandma',
-        multiplier: 1.5,
-        value: 8,
+        multiplier: 1.2,
         owned: 0,
-        price: 300,
-        interval: 5000,
+        price: 100,
+        interval: 1000,
       },
     }
   );
@@ -38,13 +36,13 @@ export function DogesCountProvider({ children }) {
     if (items.doger.owned > 0) {
       for(let i = 0; i < items.doger.owned; i++) {
         setInterval(() => {
-          setDoges(prevLikes => prevLikes + items.doger.value);
+          setDoges(prevLikes => prevLikes + 1);
         }, items.doger.interval)
       }
     } else if (items.grandma.owned > 0) {
       for (let i = 0; i < items.grandma.owned; i++) {
         setInterval(() => {
-          setGrandmas(prevLikes => prevLikes + items.grandma.value);
+          setGrandmas(prevLikes => prevLikes + 1);
         }, items.grandma.interval)
       }
     }
@@ -92,7 +90,7 @@ export function DogesCountProvider({ children }) {
       }
     }))
     setInterval(() => {
-      setDoges(prevLikes => prevLikes + item.value);
+      setDoges(prevLikes => prevLikes + 1);
     }, item.interval)
   }
 
