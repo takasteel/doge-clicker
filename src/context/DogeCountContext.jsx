@@ -9,6 +9,7 @@ export function DogesCountProvider({ children }) {
         name: 'Doger',
         multiplier: 1.1,
         owned: 0,
+        base_price: 10,
         price: 10,
         interval: 10000,
       },
@@ -16,6 +17,7 @@ export function DogesCountProvider({ children }) {
         name: 'Grandma',
         multiplier: 1.2,
         owned: 0,
+        base_price: 100,
         price: 100,
         interval: 1000,
       },
@@ -79,7 +81,8 @@ export function DogesCountProvider({ children }) {
     if (doges < item.price) return alert(`You need ${item.price} likes to buy ${item.name}!`);
     
     setDoges(doges - item.price);
-    const newPrice = Math.floor(item.price * item.multiplier) 
+    const newPrice = Math.floor(item.base_price * Math.pow(1.20, item.owned + 1))
+    console.log("New Price: " + newPrice); 
     console.log(`You bought a ${item.name}!`)
     setItems(prevItems => ({
       ...prevItems,
