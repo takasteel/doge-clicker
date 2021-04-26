@@ -21,6 +21,6 @@ Clone this repository, download the dependencies and start.
 ```bash
 git clone https://github.com/takasteel/doge-clicker.git
 cd doge-clicker
-yarn
+yarn install
 yarn start
 ```
